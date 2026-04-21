@@ -19,7 +19,7 @@ const Home = () => {
 
   // Countdown to a sample event date (adjust this!)
   useEffect(() => {
-    const eventDate = new Date("2026-05-15T09:00:00").getTime();
+    const eventDate = new Date("2026-12-15T09:00:00").getTime();
     
     const timer = setInterval(() => {
       const now = new Date().getTime();
