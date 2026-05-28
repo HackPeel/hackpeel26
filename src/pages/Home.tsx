@@ -19,7 +19,7 @@ const Home = () => {
 
   // Countdown to a sample event date (adjust this!)
   useEffect(() => {
-    const eventDate = new Date("2026-12-15T09:00:00").getTime();
+    const eventDate = new Date("2026-12-11T15:00:00").getTime();
     
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -44,11 +44,6 @@ const Home = () => {
       logo: "/4308.png",
       website: "https://www.team4308.ca"
     },
-    {
-      name: "Woodlands CS Club",
-      logo: "/wcs.png",
-      website: "https://www.twss.dev"
-    }
   ];
 
   const stats = [
