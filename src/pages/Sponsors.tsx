@@ -141,7 +141,7 @@ const Sponsors = () => {
 
     {/*     Platinum
      <div className="mb-12">
-      <h3 className="text-center text-xl font-display font-semibold text-gray-400 mb-6 tracking-widest uppercase">Silver</h3>
+      <h3 className="text-center text-xl font-display font-semibold text-gray-400 mb-6 tracking-widest uppercase">Platinum</h3>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
         {[1].map((i) => (
           <TiltCard key={i}>
@@ -201,27 +201,26 @@ const Sponsors = () => {
       </div>
     </div>
 
-     {/* Bronze 
+     {/* Bronze  */}
      <div className="mb-12">
-      <h3 className="text-center text-xl font-display font-semibold text-gray-400 mb-6 tracking-widest uppercase">Silver</h3>
+      <h3 className="text-center text-xl font-display font-semibold text-gray-400 mb-6 tracking-widest uppercase">Bronze</h3>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
         {[1].map((i) => (
           <TiltCard key={i}>
             <a href="#" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
               <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
   <img
-    src="/source.png"
-    alt="Name"
+    src="/aops.png"
+    alt="Art of Problem Solving"
     className="w-full h-full object-contain"
   />
 </div>
-              <p className="text-lg font-semibold">Name</p>
+              <p className="text-lg font-semibold">Art of Problem Solving</p>
             </a>
           </TiltCard>
         ))}
       </div>
     </div>
-    */}
 
   </div>
 </section> 
