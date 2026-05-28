@@ -128,6 +128,90 @@ const Sponsors = () => {
           </div>
         </section>
 
+<section className="py-16 border-b border-border">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto text-center mb-12">
+      <h2 className="text-3xl md:text-5xl font-bold text-center mb-16 animate-fade-in">
+        Our <span className="text-primary">Sponsors</span>
+      </h2>
+      <p className="text-muted-foreground animate-slide-up">
+        Thank you to our wonderful sponsors for making hack::peel possible.
+      </p>
+    </div>
+
+    {/*     Platinum
+    <div className="mb-12">
+      <h3 className="text-center text-xl font-display font-semibold text-gray-300 mb-6 tracking-widest uppercase">Platinum</h3>
+      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+        <TiltCard>
+          <a href="#" className="flex flex-col items-center gap-4 p-10 hover:scale-110 transition-transform">
+            <div className="w-40 h-40 flex items-center justify-center border border-gray-300/20 rounded-lg">
+              <p className="text-muted-foreground text-sm">Sponsor Logo</p>
+            </div>
+            <p className="text-2xl font-semibold">Sponsor Name</p>
+          </a>
+        </TiltCard>
+      </div>
+    </div>
+
+     Gold 
+    <div className="mb-12">
+      <h3 className="text-center text-xl font-display font-semibold text-yellow-400 mb-6 tracking-widest uppercase">Gold</h3>
+      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+        {[1, 2].map((i) => (
+          <TiltCard key={i}>
+            <a href="#" className="flex flex-col items-center gap-4 p-10 hover:scale-110 transition-transform">
+              <div className="w-32 h-32 flex items-center justify-center border border-yellow-400/20 rounded-lg">
+                <p className="text-muted-foreground text-sm">Sponsor Logo</p>
+              </div>
+              <p className="text-xl font-semibold">Sponsor Name</p>
+            </a>
+          </TiltCard>
+        ))}
+      </div>
+    </div> */}
+
+    {/* Silver */}
+    <div className="mb-12">
+      <h3 className="text-center text-xl font-display font-semibold text-gray-400 mb-6 tracking-widest uppercase">Silver</h3>
+      <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
+        {[1].map((i) => (
+          <TiltCard key={i}>
+            <a href="https://www.letsroam.com/team-building" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+              <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+  <img
+    src="/letsroam.png"
+    alt="Let's Roam"
+    className="w-full h-full object-contain"
+  />
+</div>
+              <p className="text-lg font-semibold">Let's Roam</p>
+            </a>
+          </TiltCard>
+        ))}
+      </div>
+    </div>
+
+     {/* Bronze 
+    <div className="mb-4">
+      <h3 className="text-center text-xl font-display font-semibold text-orange-400 mb-6 tracking-widest uppercase">Bronze</h3>
+      <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+        {[1, 2, 3, 4].map((i) => (
+          <TiltCard key={i}>
+            <a href="#" className="flex flex-col items-center gap-4 p-6 hover:scale-110 transition-transform">
+              <div className="w-20 h-20 flex items-center justify-center border border-orange-400/20 rounded-lg">
+                <p className="text-muted-foreground text-sm">Sponsor Logo</p>
+              </div>
+              <p className="text-base font-semibold">Sponsor Name</p>
+            </a>
+          </TiltCard>
+        ))}
+      </div>
+    </div>
+    */}
+
+  </div>
+</section> 
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
