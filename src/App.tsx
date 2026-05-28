@@ -43,7 +43,6 @@ const App = () => (
             <Route path="/code-of-conduct" element={<PageTransition><CodeOfConduct /></PageTransition>} />
             <Route path="/privacy" element={<PageTransition><Privacy /></PageTransition>} />
             <Route path="/discord" element={<PageTransition><Discord /></PageTransition>} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
           </Routes>
         </AnimatePresence>
