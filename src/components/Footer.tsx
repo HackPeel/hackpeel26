@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Github, Code, Instagram, Mail } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
+import { SiDevpost, SiLinktree } from "react-icons/si";
 import logo from "@/assets/hackpeel-logo-horizontal.png";
 
 const Footer = () => {
@@ -10,10 +11,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-1">
             <Link to="/" className="flex items-center space-x-2 group">
-            <span className="text-xl md:text-5xl mb-4 font-bold text-foreground group-hover:text-primary transition-colors">
-              hack<span className="text-primary">::</span>peel
-            </span>
-          </Link>
+              <span className="text-xl md:text-5xl mb-4 font-bold text-foreground group-hover:text-primary transition-colors">
+                hack<span className="text-primary">::</span>peel
+              </span>
+            </Link>
             <p className="text-sm text-muted-foreground">
               Built with 💙 by Harjap Singh Johar and Aaron Saini.
             </p>
@@ -58,14 +59,14 @@ const Footer = () => {
             © {new Date().getFullYear()} hack::peel — All rights reserved.
           </p>
           <div className="flex items-center space-x-4">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Devpost">
-              <Code className="h-5 w-5" />
+            <a href="https://linktr.ee/hackpeel" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Linktree">
+              <SiLinktree className="h-5 w-5" />
             </a>
-            <a href="https://www.instagram.com/hackpeel/" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
+            <a href="https://www.instagram.com/hackpeel/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram">
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
-              <Github className="h-5 w-5" />
+            <a href="https://devpost.com/hackpeel" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Devpost">
+              <SiDevpost className="h-5 w-5" />
             </a>
             <a href="mailto:hello@hackpeel.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
               <Mail className="h-5 w-5" />

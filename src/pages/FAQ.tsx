@@ -17,7 +17,7 @@ const FAQ = () => {
       questions: [
         {
           q: "What is hack::peel?",
-          a: "hack::peel is a 24-hour hackathon in Peel Region run for students, by students. It's a chance to learn, build projects, make friends, and win prizes!",
+          a: "hack::peel is a 34-hour hackathon in Peel Region run for students, by students. It's a chance to learn, build projects, make friends, and win prizes!",
         },
         {
           q: "Who can attend?",
@@ -63,7 +63,7 @@ const FAQ = () => {
         },
         {
           q: "What can I build?",
-          a: "Anything! Software, hardware, design projects - as long as you create it during the 24 hours, it's fair game.",
+          a: "Anything! Software, hardware, design projects - as long as you create it during the 34 hours, it's fair game.",
         },
         {
           q: "Can I work on an existing project?",

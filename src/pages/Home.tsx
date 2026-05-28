@@ -19,7 +19,7 @@ const Home = () => {
 
   // Countdown to a sample event date (adjust this!)
   useEffect(() => {
-    const eventDate = new Date("2026-12-11T15:00:00").getTime();
+    const eventDate = new Date("2026-12-12T09:00:00").getTime();
     
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -40,17 +40,17 @@ const Home = () => {
   
   const organisers = [
     {
-      name: "Absolute Robotics #4308",
+      name: "Team #4308: Absolute Robotics",
       logo: "/4308.png",
       website: "https://www.team4308.ca"
     },
   ];
 
   const stats = [
-    { value: "300+", label: "Participants" },
-    { value: "24", label: "Hours" },
+    { value: "200+", label: "Participants" },
+    { value: "34", label: "Hours" },
     { value: "50+", label: "Projects" },
-    { value: "20+", label: "Workshops" },
+    { value: "5+", label: "Workshops" },
   ];
 
   const highlights = [
@@ -94,7 +94,7 @@ const Home = () => {
                 <div className="h-1 w-32 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-6" />
               </div>
               <p className="text-xl md:text-2xl lg:text-3xl font-sans font-semibold text-foreground mb-3 tracking-tight animate-slide-up" style={{ animationDelay: "0.2s" }}>
-                Build the Future in 24 Hours
+                Build the Future in 34 Hours
               </p>
               <p className="text-base md:text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed font-sans animate-slide-up" style={{ animationDelay: "0.3s" }}>
                 Join Peel Region's best high school hackathon. Code, design, and innovate alongside 100+ students.
@@ -178,12 +178,12 @@ const Home = () => {
                   href={org.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 p-4 hover:scale-105 transition-transform"
+                  className="flex flex-col items-center gap-4 p-10 hover:scale-110 transition-transform"
                 >
                   <img 
                     src={org.logo} 
                     alt={org.name}
-                    className="w-60 h-60 object-contain filter brightness-0 invert"
+                    className="w-40 h-40 object-contain filter brightness-0 invert"
                   />
                   <p className="text-2xl font-semibold">{org.name}</p>
                   <span className="text-m text-muted-foreground hover:text-primary transition-colors">
@@ -248,7 +248,7 @@ const Home = () => {
               Ready to Build Something <span className="text-primary">Extraordinary?</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              Join 300+ students from across Peel Region for 24 hours of innovation, learning, and unforgettable experiences.
+              Join 300+ students from across Peel Region for 34 hours of innovation, learning, and unforgettable experiences.
             </p>
             <MagneticButton asChild size="lg" className="relative bg-primary hover:bg-primary/90 text-background font-bold text-lg px-12 py-8 shadow-[0_0_50px_rgba(0,217,255,0.6)] hover:shadow-[0_0_80px_rgba(0,217,255,0.8)] transition-all group overflow-hidden animate-slide-up" style={{ animationDelay: "0.2s" }}>
               <Link to="/register" className="flex items-center gap-3 relative z-10">

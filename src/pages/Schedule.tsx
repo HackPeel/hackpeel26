@@ -14,26 +14,85 @@ const Schedule = () => {
   const scheduleReveal = useScrollReveal();
 
   const scheduleDay1 = [
-    { time: "9:00 AM", title: "Registration & Check-in", location: "Main Hall", type: "main" },
-    { time: "10:00 AM", title: "Opening Ceremony", location: "Auditorium", type: "main" },
-    { time: "11:00 AM", title: "Hacking Begins!", location: "All Areas", type: "main" },
-    { time: "12:00 PM", title: "Intro to Web Development", location: "Room 101", type: "workshop" },
+    { time: "9:00 AM", title: "Registration & Check-in", location: "Front Foyer", type: "main" },
+    { time: "9:30 AM", title: "Opening Ceremony", location: "Cafeteria", type: "main" },
+    { time: "10:00 AM", title: "Hacking Begins", location: "All Areas", type: "main" },
+    //{ time: "12:00 PM", title: "Intro to Web Development", location: "Lecture Hall", type: "workshop" },
     { time: "1:00 PM", title: "Lunch", location: "Cafeteria", type: "main" },
-    { time: "2:00 PM", title: "APIs & Backend Basics", location: "Room 102", type: "workshop" },
-    { time: "3:30 PM", title: "UI/UX Design Workshop", location: "Room 103", type: "workshop" },
-    { time: "5:00 PM", title: "Dinner", location: "Cafeteria", type: "main" },
-    { time: "7:00 PM", title: "Hardware Hacking Session", location: "Maker Space", type: "workshop" },
-    { time: "9:00 PM", title: "Midnight Snacks", location: "Cafeteria", type: "main" },
+    //{ time: "2:00 PM", title: "APIs & Backend Basics", location: "Lecture Hall", type: "workshop" },
+    //{ time: "3:30 PM", title: "UI/UX Design Workshop", location: "Lecture Hall", type: "workshop" },
+    { time: "5:45 PM", title: "Dinner", location: "Cafeteria", type: "main" },
+    { time: "6:30 PM", title: "Closing Ceremony", location: "Cafeteria", type: "main" },
+    { time: "7:00 PM", title: "Day One Concludes", location: "All Areas", type: "main" },
   ];
 
   const scheduleDay2 = [
-    { time: "8:00 AM", title: "Breakfast", location: "Cafeteria", type: "main" },
-    { time: "9:00 AM", title: "Submission Deadline", location: "Online", type: "deadline" },
-    { time: "10:00 AM", title: "Project Demos Begin", location: "Main Hall", type: "main" },
-    { time: "12:00 PM", title: "Lunch & Judging", location: "Cafeteria", type: "main" },
-    { time: "2:00 PM", title: "Closing Ceremony & Awards", location: "Auditorium", type: "main" },
-    { time: "3:30 PM", title: "Event Ends", location: "Main Hall", type: "main" },
+    { time: "9:00 AM", title: "Check-in", location: "Front Foyer", type: "main" },
+    { time: "9:30 AM", title: "Opening Ceremony", location: "Cafeteria", type: "main" },
+    { time: "12:00 PM", title: "Lunch", location: "Cafeteria", type: "main" },
+    { time: "2:00 PM", title: "Submission Deadline", location: "Online", type: "deadline" },
+    { time: "3:00 PM", title: "Judging Begins", location: "All Areas", type: "main" },
+    { time: "3:00 PM", title: "Project Fair Begins", location: "Gym A/B", type: "main" },
+    { time: "5:00 PM", title: "Judging Concludes", location: "All Areas", type: "main" },
+    { time: "5:00 PM", title: "Project Fair Concludes", location: "Gym A/B", type: "main" },
+    { time: "5:15 PM", title: "Dinner", location: "Cafeteria", type: "main" },
+    { time: "6:00 PM", title: "Closing Ceremony & Awards", location: "Cafeteria", type: "main" },
+    { time: "7:00 PM", title: "Event Concludes", location: "All Areas", type: "main" },
   ];
+  const generateICS = () => {
+  const events = [
+    // Day 1
+    { title: "hack::peel – Registration & Check-in", start: "20261212T090000", end: "20261212T093000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Front Foyer", category: "EVENT" },
+    { title: "hack::peel – Opening Ceremony", start: "20261212T093000", end: "20261212T100000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Cafeteria", category: "EVENT" },
+    { title: "hack::peel – Hacking Begins", start: "20261212T100000", end: "20261212T170000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: All Areas", category: "EVENT" },
+    { title: "hack::peel – Intro to Web Development", start: "20261212T120000", end: "20261212T130000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Lecture Hall | Type: Workshop", category: "WORKSHOP" },
+    { title: "hack::peel – Lunch", start: "20261212T130000", end: "20261212T140000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Cafeteria", category: "EVENT" },
+    { title: "hack::peel – APIs & Backend Basics", start: "20261212T140000", end: "20261212T153000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Lecture Hall | Type: Workshop", category: "WORKSHOP" },
+    { title: "hack::peel – UI/UX Design Workshop", start: "20261212T153000", end: "20261212T174500", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Lecture Hall | Type: Workshop", category: "WORKSHOP" },
+    { title: "hack::peel – Dinner", start: "20261212T174500", end: "20261212T183000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Cafeteria", category: "EVENT" },
+    { title: "hack::peel – Closing Ceremony (Day 1)", start: "20261212T183000", end: "20261212T190000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Cafeteria", category: "EVENT" },
+    // Day 2
+    { title: "hack::peel – Check-in", start: "20261213T090000", end: "20261213T093000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Front Foyer", category: "EVENT" },
+    { title: "hack::peel – Opening Ceremony (Day 2)", start: "20261213T093000", end: "20261213T100000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Cafeteria", category: "EVENT" },
+    { title: "hack::peel – Hacking Continues", start: "20261213T100000", end: "20261213T140000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: All Areas", category: "EVENT" },
+    { title: "hack::peel – Lunch", start: "20261213T120000", end: "20261213T130000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Cafeteria", category: "EVENT" },
+    { title: "hack::peel – Submission Deadline", start: "20261213T140000", end: "20261213T141500", location: "Online", description: "Submit your project online by 2:00 PM | Type: Deadline", category: "DEADLINE" },
+    { title: "hack::peel – Judging", start: "20261213T150000", end: "20261213T170000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: All Areas", category: "EVENT" },
+    { title: "hack::peel – Project Fair", start: "20261213T150000", end: "20261213T170000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Gym A/B", category: "EVENT" },
+    { title: "hack::peel – Dinner", start: "20261213T171500", end: "20261213T180000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Cafeteria", category: "EVENT" },
+    { title: "hack::peel – Closing Ceremony & Awards", start: "20261213T180000", end: "20261213T190000", location: "3225 Erindale Station Rd, Mississauga, ON L5C 1Y5", description: "Location: Cafeteria", category: "EVENT" },
+  ];
+
+  const icsContent = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//hack::peel//Schedule//EN",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    "X-WR-CALNAME:hack::peel 2026",
+    "X-WR-TIMEZONE:America/Toronto",
+    ...events.map((e, i) => [
+      "BEGIN:VEVENT",
+      `UID:hackpeel-${i}@hackpeel2026`,
+      `DTSTART;TZID=America/Toronto:${e.start}`,
+      `DTEND;TZID=America/Toronto:${e.end}`,
+      `SUMMARY:${e.title}`,
+      `LOCATION:${e.location}`,
+      `DESCRIPTION:${e.description}`,
+      `CATEGORIES:${e.category}`,
+      "END:VEVENT",
+    ].join("\r\n")),
+    "END:VCALENDAR",
+  ].join("\r\n");
+
+  const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "hackpeel2026.ics";
+  a.click();
+  URL.revokeObjectURL(url);
+};
 
   const getTypeColor = (type: string) => {
     switch (type) {
@@ -59,28 +118,29 @@ const Schedule = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 animate-fade-in">
-                  coming <span className="text-primary animate-text-glow">soon</span>
+                  hack::peel <span className="text-primary animate-text-glow">schedule</span>
                 </h1>
-                {/*<p className="text-lg md:text-xl text-muted-foreground mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-                  24 hours of workshops, hacking, food, and fun!
+                <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+                  34 hours of workshops, hacking, food, and fun!
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-                  <MagneticButton variant="outline" className="gap-2">
-                    <Download className="h-4 w-4" />
-                    Download PDF
-                  </MagneticButton>
-                  <MagneticButton variant="outline" className="gap-2">
+                  <a href="/The Woodlands School - Map.pdf" download target="_blank" rel="noopener noreferrer">
+                    <MagneticButton variant="outline" className="gap-2">
+                         <Download className="h-4 w-4" />
+                          Download Map
+                    </MagneticButton> </a>
+                    {/*<MagneticButton variant="outline" className="gap-2" onClick={generateICS}>
                     <Calendar className="h-4 w-4" />
                     Add to Calendar
-                  </MagneticButton>
-                </div>*/}
+                    </MagneticButton> */}
+                </div>
               </div>
             </div>
           </section>
         </ParallaxSection>
 
         {/* Schedule */}
-        {/*<section className="py-16">
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <div 
               ref={scheduleReveal.ref}
@@ -91,10 +151,10 @@ const Schedule = () => {
               <Tabs defaultValue="day1" className="max-w-4xl mx-auto">
                 <TabsList className="grid w-full grid-cols-2 mb-8">
                   <TabsTrigger value="day1" className="font-display font-semibold">
-                    Day 1 - Saturday
+                    Day 1 - Saturday, December 12th, 2026
                   </TabsTrigger>
                   <TabsTrigger value="day2" className="font-display font-semibold">
-                    Day 2 - Sunday
+                    Day 2 - Sunday, December 13th, 2026
                   </TabsTrigger>
                 </TabsList>
 
@@ -146,31 +206,10 @@ const Schedule = () => {
                     </TiltCard>
                   ))}
                 </TabsContent>
-              </Tabs>*/}
-
-              {/* Legend */}
-              {/*<ParallaxSection speed={0}>
-                <div className="max-w-4xl mx-auto mt-8 p-6 bg-muted/30 rounded-lg backdrop-blur-sm">
-                  <h3 className="font-display font-semibold mb-4">Schedule Key</h3>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-4 h-4 bg-primary rounded" />
-                      <span className="text-sm">Main Stage Events</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-4 h-4 bg-secondary rounded" />
-                      <span className="text-sm">Workshops</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-4 h-4 bg-destructive rounded" />
-                      <span className="text-sm">Important Deadlines</span>
-                    </div>
-                  </div>
-                </div>
-              </ParallaxSection>
+              </Tabs>
             </div>
           </div>
-        </section>*/}
+        </section>
       </div>
 
       <Footer />

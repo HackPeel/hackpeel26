@@ -26,10 +26,10 @@ const About = () => {
       "Organizers attempted to relaunch the event during these years, but logistical constraints prevented hack::peel from officially running. The community and interest, however, continued to grow behind the scenes."
   },
   {
-    year: "2025",
+    year: "2026",
     title: "Revival",
     description:
-      "hack::peel is returning stronger than ever, marking a full revival. Now, as a collaboration between Woodlands CS Club and Absolute Robotics #4308, hack::peel has the potential to reach new heights. Featuring our largest attendance, expanded tracks, polished organization, and new partnerships, 2025 will be the most ambitious and successful edition yet."
+      "hack::peel is returning stronger than ever, marking a full revival. Now, run by FRC Team #4308: Absolute Robotics , hack::peel has the potential to reach new heights. Featuring our largest attendance, expanded tracks, polished organization, and new partnerships, 2026 will be the most ambitious and successful edition yet."
   }
 ];
 

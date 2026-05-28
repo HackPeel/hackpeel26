@@ -69,10 +69,6 @@ const Privacy = () => {
                     </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2">•</span>
-                      <span>Share anonymized resume books with sponsors (with your consent)</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">•</span>
                       <span>Improve future events through feedback and analytics</span>
                     </li>
                   </ul>
@@ -84,10 +80,6 @@ const Privacy = () => {
                     We respect your privacy and only share your information when necessary:
                   </p>
                   <ul className="space-y-2 text-muted-foreground ml-6">
-                    <li className="flex items-start">
-                      <span className="text-primary mr-2">•</span>
-                      <span>With sponsors only if you opt-in to the resume book</span>
-                    </li>
                     <li className="flex items-start">
                       <span className="text-primary mr-2">•</span>
                       <span>With MLH (Major League Hacking) as per their{" "}
