@@ -9,6 +9,11 @@
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
+   <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+  />
+
 
   <style>
     :root {
@@ -531,11 +536,11 @@
     }
 
     .usp-inner {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center;
-    }
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
 
     .usp-heading {
       font-size: 22px;
@@ -870,7 +875,6 @@
 
   </style>
 </head>
-
 <body>
 
 <canvas id="node-canvas"></canvas>
@@ -878,12 +882,10 @@
 <div class="wrapper">
 
   <!-- NAV -->
-
   <nav>
-
     <div class="nav-logo">
-  hack<span>::</span>peel
-</div>
+      hack<span>::</span>peel
+    </div>
 
     <div class="nav-links">
       <a href="#overview">Overview</a>
@@ -891,20 +893,13 @@
       <a href="#tiers">Tiers</a>
     </div>
 
-    <a
-      href="https://hackpeel.xyz/contact"
-      target="_blank"
-      class="btn-ghost"
-    >
+    <a href="https://hackpeel.xyz/contact" target="_blank" class="btn-ghost">
       View Website ↗
     </a>
-
   </nav>
 
   <!-- HERO -->
-
   <section class="hero" id="overview">
-
     <div class="container">
 
       <div class="eyebrow">
@@ -912,20 +907,22 @@
       </div>
 
       <div class="hero-headline">
-  <h1 class="hero-logo-text">
-    hack<span class="hero-colons">::</span>peel
-  </h1>
+        <h1 class="hero-logo-text">
+          hack<span class="hero-colons">::</span>peel
+        </h1>
+        <div class="hero-rule"></div>
+      </div>
 
-  <div class="hero-rule"></div>
-</div>
       <h1 class="hero-tagline">
-        Sponsor Peel Region's premier high school hackathon.
-        <br><br>
+        Build the Future in 34 Hours
       </h1>
-  
 
+      <p class="hero-sub">
+        Peel Region's premier high school hackathon · The Woodlands School
+      </p>
+
+      <!-- ✅ UPDATED METRICS (from first design) -->
       <div class="stats">
-
         <div class="stat-card">
           <div class="stat-num">200+</div>
           <div class="stat-label">Participants</div>
@@ -945,31 +942,30 @@
           <div class="stat-num">5+</div>
           <div class="stat-label">Workshops</div>
         </div>
-
       </div>
 
+      <!-- DATE / LOCATION -->
       <div class="btn-row">
-
-
-
         <div class="sponsor-pill sponsor-event-pill">
 
-  <div class="event-date">
-    Dec 12–13, 2026
-  </div>
+          <div class="event-date">
+            Dec 12–13, 2026
+          </div>
 
-  <div class="event-location">
-    <span class="location-icon">📍</span>
-    <span>
-      The Woodlands Secondary School<br>
-      Mississauga, Ontario
-    </span>
-  </div>
+          <div class="event-location">
+            <span class="location-icon">
+              <i class="ti ti-map-pin"></i>
+            </span>
+            <span>
+              The Woodlands Secondary School<br>
+              Mississauga, Ontario
+            </span>
+          </div>
 
-</div>
-
+        </div>
       </div>
 
+      <!-- ORGANIZER (UPDATED TEXT FROM FIRST DESIGN) -->
       <div class="org-strip">
 
         <div class="org-icon">
@@ -977,391 +973,185 @@
         </div>
 
         <div>
-
           <div class="org-name">
-            Organised by FRC Team #4308 — Absolute Robotics
+            Organised by Team #4308 — Absolute Robotics
           </div>
 
           <div class="org-sub">
             A student-led FIRST Robotics team making STEM accessible across Peel Region ·
-            <a
-              href="https://www.team4308.ca"
-              target="_blank"
-              class="org-link"
-            >
+            <a href="https://www.team4308.ca" target="_blank" class="org-link">
               team4308.ca ↗
             </a>
           </div>
-
         </div>
 
       </div>
 
     </div>
-
   </section>
 
   <!-- WHY -->
-
   <section id="why">
-
     <div class="container">
 
       <div class="section-header reveal">
-
-        <div class="section-eyebrow">
-          Why Sponsor
-        </div>
+        <div class="section-eyebrow">Why Sponsor</div>
 
         <h2 class="section-title">
-          Your Guaranteed <em>ROI</em>
+          Invest in the <em>Future</em>
         </h2>
 
         <p class="section-sub">
-          Most sponsorships offer visibility.
-          hack::peel offers something better:
-          a captive, engaged audience built directly
-          into the judging criteria.
+          Help us inspire the next generation of innovators while showcasing your brand in action.
         </p>
-
       </div>
 
+      <!-- USP (kept, cleaned) -->
       <div class="usp-card reveal">
 
-        <div class="usp-badge">
-          Unique Selling Point
-        </div>
+        <div class="usp-badge">Unique Opportunity</div>
 
         <div class="usp-inner">
 
           <div>
-
             <div class="usp-heading">
-              Workshop attendance directly affects judging
+              Invest directly in student innovation
             </div>
 
             <div class="usp-body">
-              Every team's final score depends
-              <strong style="color:var(--primary)">20%</strong>
-              on workshop participation.
-              Sponsors who host workshops are guaranteed
-              a focused, technically engaged audience.
+              Sponsorship directly funds prizes, logistics, and resources, empowering hundreds of high school students to explore innovation, coding, and design. This is your chance to shape Peel Region's emerging tech talent while showcasing your commitment to education and community growth.
+
             </div>
-
           </div>
 
-          <div class="usp-stat">
-            20%
-          </div>
+          <div class="usp-stat">200+</div>
 
         </div>
-
       </div>
 
+      <!-- PERKS (✅ ICONS REPLACED WITH TABLER) -->
       <div class="perks-grid reveal">
 
         <div class="perk-card">
-          <div class="perk-icon">📡</div>
-
+          <div class="perk-icon"><i class="ti ti-speakerphone"></i></div>
           <div>
-            <div class="perk-title">
-              Brand Visibility
-            </div>
-
-            <div class="perk-desc">
-              Logo placement across merch,
-              social media, website, and event signage.
-            </div>
+            <div class="perk-title">Brand Visibility</div>
+            <div class="perk-desc">Logo on merch, website, signage, and social media.</div>
           </div>
         </div>
 
         <div class="perk-card">
-          <div class="perk-icon">🎯</div>
-
+          <div class="perk-icon"><i class="ti ti-users"></i></div>
           <div>
-            <div class="perk-title">
-              Direct Talent Access
-            </div>
-
-            <div class="perk-desc">
-              Meet highly motivated high school
-              developers, designers, and builders.
-            </div>
+            <div class="perk-title">Direct Talent Access</div>
+            <div class="perk-desc">Connect with 200+ motivated students across Peel Region.</div>
           </div>
         </div>
 
         <div class="perk-card">
-          <div class="perk-icon">🛠</div>
-
+          <div class="perk-icon"><i class="ti ti-tournament"></i></div>
           <div>
-            <div class="perk-title">
-              Workshop Hosting
-            </div>
-
-            <div class="perk-desc">
-              Showcase your technology through
-              hands-on branded sessions.
-            </div>
+            <div class="perk-title">Workshop Hosting</div>
+            <div class="perk-desc">Run a branded session or demo your technology.</div>
           </div>
         </div>
 
         <div class="perk-card">
-          <div class="perk-icon">🏆</div>
-
+          <div class="perk-icon"><i class="ti ti-trophy"></i></div>
           <div>
-            <div class="perk-title">
-              Custom Prize Category
-            </div>
-
-            <div class="perk-desc">
-              Align your brand with a challenge
-              category tailored to your mission.
-            </div>
+            <div class="perk-title">Category Prize</div>
+            <div class="perk-desc">Create a custom award aligned with your mission.</div>
           </div>
         </div>
 
       </div>
 
     </div>
-
   </section>
 
-  <!-- TIERS -->
+ <!-- TIERS -->
+<section id="tiers">
+  <div class="container">
 
-  <section id="tiers">
+    <div class="section-header center reveal">
+      <div class="section-eyebrow">Sponsorship Tiers</div>
+      <h2 class="section-title">Choose Your <em>Level</em></h2>
+      <p class="section-sub">Flexible sponsorship options for all organizations.</p>
+    </div>
 
-    <div class="container">
+    <div class="tiers-grid reveal">
 
-      <div class="section-header center reveal">
+      <div class="tier-card tier-plat">
+        <div class="tier-bar"></div>
+        <div class="tier-name">Platinum</div>
+        <div class="tier-price">$1000+</div>
 
-        <div class="section-eyebrow">
-          Sponsorship Tiers
-        </div>
-
-        <h2 class="section-title">
-          Choose Your <em>Level</em>
-        </h2>
-
-        <p class="section-sub">
-          Flexible sponsorship options for organizations
-          of all sizes.
-        </p>
-
+        <div class="tier-section-label">Includes</div>
+        <ul class="tier-list">
+          <li><span class="check">✓</span> Main stage recognition</li>
+          <li><span class="check">✓</span> Logo on all marketing</li>
+          <li><span class="check">✓</span> Workshop hosting opportunity</li>
+          <li><span class="check">✓</span> Judge or mentor role</li>
+        </ul>
       </div>
 
-      <div class="tiers-grid reveal">
+      <div class="tier-card tier-gold">
+        <div class="tier-bar"></div>
+        <div class="tier-name">Gold</div>
+        <div class="tier-price">$500+</div>
 
-        <!-- PLAT -->
-
-        <div class="tier-card tier-plat">
-
-          <div class="tier-bar"></div>
-
-          <div class="tier-name">
-            Platinum
-          </div>
-
-          <div class="tier-price">
-            $2,000
-          </div>
-
-          <div class="tier-section-label">
-            Engagement
-          </div>
-
-          <ul class="tier-list">
-
-            <li><span class="check">✓</span> Custom workshop hosting</li>
-            <li><span class="check">✓</span> Sponsor stall</li>
-            <li><span class="check">✓</span> Keynote presentation</li>
-            <li><span class="check">✓</span> Judge panel participation</li>
-            <li><span class="check">✓</span> Custom prize category</li>
-
-          </ul>
-
-          <hr class="tier-divider">
-
-          <div class="tier-section-label">
-            Branding
-          </div>
-
-          <ul class="tier-list">
-
-            <li><span class="check">✓</span> Logo on merchandise</li>
-            <li><span class="check">✓</span> Social media promotion</li>
-            <li><span class="check">✓</span> Merchandise distribution</li>
-
-          </ul>
-
-        </div>
-
-        <!-- GOLD -->
-
-        <div class="tier-card tier-gold">
-
-          <div class="tier-bar"></div>
-
-          <div class="tier-name">
-            Gold
-          </div>
-
-          <div class="tier-price">
-            $1,000
-          </div>
-
-          <div class="tier-section-label">
-            Engagement
-          </div>
-
-          <ul class="tier-list">
-
-            <li><span class="check">✓</span> Keynote presentation</li>
-            <li><span class="check">✓</span> Judge participation</li>
-            <li><span class="check">✓</span> Custom prize category</li>
-
-          </ul>
-
-          <hr class="tier-divider">
-
-          <div class="tier-section-label">
-            Branding
-          </div>
-
-          <ul class="tier-list">
-
-            <li><span class="check">✓</span> Logo on merchandise</li>
-            <li><span class="check">✓</span> Social media promotion</li>
-
-          </ul>
-
-        </div>
-
-        <!-- SILVER -->
-
-        <div class="tier-card tier-silv">
-
-          <div class="tier-bar"></div>
-
-          <div class="tier-name">
-            Silver
-          </div>
-
-          <div class="tier-price">
-            $500
-          </div>
-
-          <div class="tier-section-label">
-            Engagement
-          </div>
-
-          <ul class="tier-list">
-
-            <li><span class="check">✓</span> Sponsor Discord access</li>
-            <li><span class="check">✓</span> Custom prize category</li>
-
-          </ul>
-
-          <hr class="tier-divider">
-
-          <div class="tier-section-label">
-            Branding
-          </div>
-
-          <ul class="tier-list">
-
-            <li><span class="check">✓</span> Logo on merchandise</li>
-            <li><span class="check">✓</span> Social media promotion</li>
-
-          </ul>
-
-        </div>
-
-        <!-- BRONZE -->
-
-        <div class="tier-card tier-brnz">
-
-          <div class="tier-bar"></div>
-
-          <div class="tier-name">
-            Bronze
-          </div>
-
-          <div class="tier-price">
-            $250
-          </div>
-
-          <div class="tier-section-label">
-            Branding
-          </div>
-
-          <ul class="tier-list">
-
-            <li><span class="check">✓</span> Logo on merchandise</li>
-            <li><span class="check">✓</span> Social media promotion</li>
-
-          </ul>
-
-        </div>
-
+        <div class="tier-section-label">Includes</div>
+        <ul class="tier-list">
+          <li><span class="check">✓</span> Logo on website + posters</li>
+          <li><span class="check">✓</span> Social media shoutout</li>
+          <li><span class="check">✓</span> Booth space</li>
+        </ul>
       </div>
 
-      <!-- CTA -->
+      <div class="tier-card tier-silv">
+        <div class="tier-bar"></div>
+        <div class="tier-name">Silver</div>
+        <div class="tier-price">$250+</div>
 
-      <div class="why-card reveal">
+        <div class="tier-section-label">Includes</div>
+        <ul class="tier-list">
+          <li><span class="check">✓</span> Website recognition</li>
+          <li><span class="check">✓</span> Event mention</li>
+        </ul>
+      </div>
 
-        <div class="section-eyebrow">
-          Get Involved
-        </div>
+      <div class="tier-card tier-brnz">
+        <div class="tier-bar"></div>
+        <div class="tier-name">Bronze</div>
+        <div class="tier-price">$100+</div>
 
-        <h3 class="section-title">
-          Ready to <em>Sponsor</em>?
-        </h3>
-
-        <p>
-          Support the next generation of developers,
-          designers, and innovators across Peel Region.
-        </p>
-
-        <a
-          href="mailto:hackpeel@gmail.com"
-          class="btn-primary"
-        >
-          Get in Touch
-        </a>
-
+        <div class="tier-section-label">Includes</div>
+        <ul class="tier-list">
+          <li><span class="check">✓</span> Name listed on website</li>
+          <li><span class="check">✓</span> Community supporter recognition</li>
+        </ul>
       </div>
 
     </div>
 
-  </section>
+  </div>
+</section>
 
   <!-- FOOTER -->
-
   <footer>
-
     <div class="footer-left">
-      <img
-        src="full-logo.png"
-        alt="hack::peel"
-        style="height:28px;width:auto;"
-      >
+      <img src="full-logo.png" alt="hack::peel" style="height:28px;">
     </div>
 
     <div class="footer-right">
-      The Woodlands Secondary School, Mississauga · Dec 12–13, 2026
-      <br>
-
-      <a href="https://hackpeel.xyz" target="_blank">
-        hackpeel.xyz ↗
-      </a>
+      The Woodlands Secondary School · Dec 12–13, 2026<br>
+      <a href="https://hackpeel.xyz" target="_blank">hackpeel.xyz ↗</a>
     </div>
-
   </footer>
 
 </div>
 
 <script>
-
   /* NODE NETWORK */
 
   const canvas = document.getElementById("node-canvas");
