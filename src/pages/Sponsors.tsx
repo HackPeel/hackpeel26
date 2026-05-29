@@ -134,9 +134,9 @@ const Sponsors = () => {
       </p>
     </div>
 
-    {/*     Platinum
+      {/*  Platinum
      <div className="mb-12">
-      <h3 className="text-center text-xl font-display font-semibold text-gray-400 mb-6 tracking-widest uppercase">Platinum</h3>
+      <h3 className="text-center text-xl font-display font-semibold bg-gradient-to-r from-zinc-300 via-white to-zinc-400 bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] animate-pulse mb-6 tracking-widest uppercase">Platinum</h3>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
         {[1].map((i) => (
           <TiltCard key={i}>
@@ -198,7 +198,7 @@ const Sponsors = () => {
 
      {/* Bronze  */}
      <div className="mb-12">
-      <h3 className="text-center text-xl font-display font-semibold text-gray-400 mb-6 tracking-widest uppercase">Bronze</h3>
+      <h3 className="text-center text-xl font-display font-semibold text-orange-700 mb-6 tracking-widest uppercase">Bronze</h3>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
         {[1].map((i) => (
           <TiltCard key={i}>
