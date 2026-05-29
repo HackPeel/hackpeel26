@@ -47,8 +47,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-display font-semibold text-lg mb-2">Email Us</h3>
-                      <a href="mailto:hello@hackpeel.com" className="text-primary hover:underline">
-                        hello@hackpeel.com
+                      <a href="mailto:hackpeel@gmail.com" className="text-primary hover:underline">
+                        hackpeel@gmail.com
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">
                         We typically respond within 24 hours
@@ -95,13 +95,6 @@ const Contact = () => {
                   </div>
                 </Card> */}
 
-                {/* Map Placeholder */} {/*}
-                <Card className="p-6 bg-muted/30">
-                  <h3 className="font-display font-semibold text-lg mb-4">Find Us</h3>
-                  <div className="aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg flex items-center justify-center">
-                    <p className="text-muted-foreground">Map Embed</p>
-                  </div>
-                </Card> */}
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { MagneticButton } from "@/components/MagneticButton";
 import { Button } from "@/components/ui/button";
-import { Check, Download } from "lucide-react";
+import { Check, Download, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FloatingParticles } from "@/components/FloatingParticles";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
@@ -71,14 +71,9 @@ const Sponsors = () => {
     },
   ];
 
-  const handleDownloadProspectus = () => {
-    const link = document.createElement('a');
-    link.href = '/sponsorship-prospectus.pdf';
-    link.download = 'hack-peel-sponsorship-prospectus.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const handleOpenProspectus = () => {
+  window.open('/Sponsorship Prospectus.html', '_blank');
+};
 
   return (
     <div className="min-h-screen bg-background">
@@ -103,13 +98,13 @@ const Sponsors = () => {
                 Become a Sponsor
               </MagneticButton>
             </Link>
-           {/* <Button 
-              variant="outline"
-              onClick={handleDownloadProspectus}
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Download Prospectus
-            </Button> */}
+          <Button
+  variant="outline"
+  onClick={handleOpenProspectus}
+>
+  <ExternalLink className="mr-2 h-4 w-4" />
+  View Prospectus
+</Button>
           </div>
         </div>
       </div>
