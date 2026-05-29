@@ -155,25 +155,28 @@ const Sponsors = () => {
       </div>
     </div> */}
  
-    <div className="mb-12">
-      <h3 className="text-center text-xl font-display font-semibold text-yellow-400 mb-6 tracking-widest uppercase">Gold</h3>
-      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-        {[1 ].map((i) => (
-          <TiltCard key={i}>
-            <a href="https://codecrafters.io/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
-              <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
-  <img
-    src="/codecrafters.png"
-    alt="Code Crafters"
-    className="w-full h-full object-contain"
-  />
+<div className="mb-12">
+  <h3 className="text-center text-xl font-display font-semibold text-yellow-400 mb-6 tracking-widest uppercase">Gold</h3>
+  <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+    <TiltCard>
+      <a href="https://codecrafters.io/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+        <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+          <img src="/codecrafters.png" alt="Code Crafters" className="w-full h-full object-contain" />
+        </div>
+        <p className="text-lg font-semibold">Code Crafters</p>
+      </a>
+    </TiltCard>
+
+    <TiltCard>
+      <a href="https://gen.xyz/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+        <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+          <img src="/xyz.png" alt=".xyz" className="w-full h-full object-contain" />
+        </div>
+        <p className="text-lg font-semibold">.xyz</p>
+      </a>
+    </TiltCard>
+  </div>
 </div>
-              <p className="text-lg font-semibold">Code Crafters</p>
-            </a>
-          </TiltCard>
-        ))}
-      </div>
-    </div>
 
     {/* Silver */}
     <div className="mb-12">
