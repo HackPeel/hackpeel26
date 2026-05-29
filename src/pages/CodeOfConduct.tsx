@@ -123,8 +123,8 @@ const CodeOfConduct = () => {
                   <h3 className="font-display font-semibold text-lg mb-2">Questions or Concerns?</h3>
                   <p className="text-muted-foreground">
                     If you have questions about this Code of Conduct or need to report a violation, please contact us at{" "}
-                    <a href="mailto:hackpeel@gmail.com" className="text-primary hover:underline">
-                      hackpeel@gmail.com
+                    <a href="mailto:support@hackpeel.ca" className="text-primary hover:underline">
+                      support@hackpeel.ca
                     </a>
                   </p>
                 </Card>

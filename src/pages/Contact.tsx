@@ -47,8 +47,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-display font-semibold text-lg mb-2">Email Us</h3>
-                      <a href="mailto:hackpeel@gmail.com" className="text-primary hover:underline">
-                        hackpeel@gmail.com
+                      <a href="mailto:hello@hackpeel.ca" className="text-primary hover:underline">
+                        hello@hackpeel.ca
                       </a>
                       <p className="text-sm text-muted-foreground mt-1">
                         We typically respond within 24 hours

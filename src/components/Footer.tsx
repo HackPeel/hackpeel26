@@ -68,7 +68,7 @@ const Footer = () => {
             <a href="https://hack-peel.devpost.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Devpost">
               <SiDevpost className="h-5 w-5" />
             </a>
-            <a href="mailto:hackpeel@gmail.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
+            <a href="mailto:hello@hackpeel.ca" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
               <Mail className="h-5 w-5" />
             </a>
           </div>

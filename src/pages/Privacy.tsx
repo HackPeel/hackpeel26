@@ -134,8 +134,8 @@ const Privacy = () => {
                   <h2 className="text-2xl font-display font-bold mb-4">Contact Us</h2>
                   <p className="text-muted-foreground">
                     If you have questions about this Privacy Policy or want to exercise your rights, please contact us at{" "}
-                    <a href="mailto:hackpeel@gmail.com" className="text-primary hover:underline">
-                      hackpeel@gmail.com
+                    <a href="mailto:support@hackpeel.ca" className="text-primary hover:underline">
+                      support@hackpeel.ca
                     </a>
                   </p>
                 </TiltCard>
