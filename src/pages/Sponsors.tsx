@@ -134,26 +134,24 @@ const Sponsors = () => {
       </p>
     </div>
 
-      {/*  Platinum
+      {/*  Platinum */}
      <div className="mb-12">
       <h3 className="text-center text-xl font-display font-semibold bg-gradient-to-r from-zinc-300 via-white to-zinc-400 bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] animate-pulse mb-6 tracking-widest uppercase">Platinum</h3>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
-        {[1].map((i) => (
-          <TiltCard key={i}>
-            <a href="#" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+          <TiltCard>
+            <a href="https://www.interviewcake.com/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
               <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
   <img
-    src="/source.png"
-    alt="Name"
+    src="/interviewcake.png"
+    alt="Interview Cake"
     className="w-full h-full object-contain"
   />
 </div>
-              <p className="text-lg font-semibold">Name</p>
+              <p className="text-lg font-semibold">Interview Cake</p>
             </a>
           </TiltCard>
-        ))}
       </div>
-    </div> */}
+    </div> 
  
 <div className="mb-12">
   <h3 className="text-center text-xl font-display font-semibold text-yellow-400 mb-6 tracking-widest uppercase">Gold</h3>
