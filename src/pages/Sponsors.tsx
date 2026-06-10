@@ -177,9 +177,34 @@ const Sponsors = () => {
 </div>
 
     {/* Silver */}
+
     <div className="mb-12">
       <h3 className="text-center text-xl font-display font-semibold text-gray-400 mb-6 tracking-widest uppercase">Silver</h3>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
+        <TiltCard>
+            <a href="https://www.pcbway.com/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+              <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+  <img
+    src="/pcbway.png"
+    alt="PCBWay"
+    className="w-full h-full object-contain"
+  />
+</div>
+              <p className="text-lg font-semibold">PCBWay</p>
+            </a>
+          </TiltCard>
+          <TiltCard>
+            <a href="https://windscribe.com/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+              <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+  <img
+    src="/windscribe.png"
+    alt="Windscribe"
+    className="w-full h-full object-contain"
+  />
+</div>
+              <p className="text-lg font-semibold">Windscribe</p>
+            </a>
+          </TiltCard>
           <TiltCard>
             <a href="https://www.letsroam.com/team-building" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
               <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
@@ -192,18 +217,7 @@ const Sponsors = () => {
               <p className="text-lg font-semibold">Let's Roam</p>
             </a>
           </TiltCard>
-          <TiltCard>
-            <a href="https://www.pcbway.com/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
-              <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
-  <img
-    src="/pcbway.png"
-    alt="PCBWay"
-    className="w-full h-full object-contain"
-  />
-</div>
-              <p className="text-lg font-semibold">PCBWay</p>
-            </a>
-          </TiltCard>
+          
       </div>
     </div>
     
