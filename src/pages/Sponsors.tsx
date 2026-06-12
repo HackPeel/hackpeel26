@@ -138,6 +138,34 @@ const Sponsors = () => {
      <div className="mb-12">
       <h3 className="text-center text-xl font-display font-semibold bg-gradient-to-r from-zinc-300 via-white to-zinc-400 bg-clip-text text-transparent drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] animate-pulse mb-6 tracking-widest uppercase">Platinum</h3>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
+      <TiltCard>
+            <a href="https://www.team4308.ca/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+              <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+  <img
+    src="/4308.png"
+    alt="Team 4308: Absolute Robotics"
+    className="w-full h-full object-contain"
+  />
+</div>
+              <p className="text-lg font-semibold text-center">Team 4308: <br /> Absolute Robotics</p>
+            </a>
+          </TiltCard>
+          <TiltCard>
+            <a href="https://thewoodlandsss.peelschools.org/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+              <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+  <img
+    src="/woodlands.png"
+    alt="The Woodlands Secondary School"
+    className="w-full h-full object-contain"
+  />
+</div>
+              <p className="text-lg font-semibold text-center">
+  The Woodlands
+  <br />
+  Secondary School
+</p>
+            </a>
+          </TiltCard>
           <TiltCard>
             <a href="https://www.interviewcake.com/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
               <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
