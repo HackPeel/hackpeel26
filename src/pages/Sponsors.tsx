@@ -144,7 +144,7 @@ const Sponsors = () => {
   <img
     src="/4308.png"
     alt="Team 4308: Absolute Robotics"
-    className="w-full h-full object-contain"
+    className="w-full h-full object-contain brightness-0 invert"
   />
 </div>
               <p className="text-lg font-semibold text-center">Team 4308: <br /> Absolute Robotics</p>
@@ -156,7 +156,7 @@ const Sponsors = () => {
   <img
     src="/woodlands.png"
     alt="The Woodlands Secondary School"
-    className="w-full h-full object-contain"
+    className="w-full h-full object-contain "
   />
 </div>
               <p className="text-lg font-semibold text-center">
@@ -170,9 +170,9 @@ const Sponsors = () => {
             <a href="https://www.interviewcake.com/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
               <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
   <img
-    src="/interviewcake.png"
+    src="/interviewcake.svg"
     alt="Interview Cake"
-    className="w-full h-full object-contain"
+    className="w-full h-full object-contain brightness-0 invert"
   />
 </div>
               <p className="text-lg font-semibold">Interview Cake</p>
@@ -187,7 +187,7 @@ const Sponsors = () => {
     <TiltCard>
       <a href="https://codecrafters.io/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
         <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
-          <img src="/codecrafters.png" alt="Code Crafters" className="w-full h-full object-contain" />
+          <img src="/codecrafters.png" alt="Code Crafters" className="w-full h-full object-contain " />
         </div>
         <p className="text-lg font-semibold">Code Crafters</p>
       </a>
@@ -196,7 +196,7 @@ const Sponsors = () => {
     <TiltCard>
       <a href="https://gen.xyz/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
         <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
-          <img src="/xyz.png" alt=".xyz" className="w-full h-full object-contain" />
+          <img src="/xyz.png" alt=".xyz" className="w-full h-full object-contain brightness-0 invert" />
         </div>
         <p className="text-lg font-semibold">.xyz</p>
       </a>
@@ -209,16 +209,28 @@ const Sponsors = () => {
     <div className="mb-12">
       <h3 className="text-center text-xl font-display font-semibold text-gray-400 mb-6 tracking-widest uppercase">Silver</h3>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
-        <TiltCard>
+           <TiltCard>
             <a href="https://www.pcbway.com/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
               <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
   <img
     src="/pcbway.png"
     alt="PCBWay"
-    className="w-full h-full object-contain"
+    className="w-full h-full object-contain brightness-0 invert"
   />
 </div>
               <p className="text-lg font-semibold">PCBWay</p>
+            </a>
+          </TiltCard>
+        <TiltCard>
+            <a href="https://featherless.ai/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+              <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+  <img
+    src="/featherless.svg"
+    alt="Featherless"
+    className="w-full h-full object-contain brightness-0 invert"
+  />
+</div>
+              <p className="text-lg font-semibold">Featherless</p>
             </a>
           </TiltCard>
           <TiltCard>
@@ -227,7 +239,7 @@ const Sponsors = () => {
   <img
     src="/windscribe.png"
     alt="Windscribe"
-    className="w-full h-full object-contain"
+    className="w-full h-full object-contain "
   />
 </div>
               <p className="text-lg font-semibold">Windscribe</p>
@@ -239,7 +251,7 @@ const Sponsors = () => {
   <img
     src="/letsroam.png"
     alt="Let's Roam"
-    className="w-full h-full object-contain"
+    className="w-full h-full object-contain brightness-0 invert"
   />
 </div>
               <p className="text-lg font-semibold">Let's Roam</p>
@@ -254,20 +266,18 @@ const Sponsors = () => {
      <div className="mb-12">
       <h3 className="text-center text-xl font-display font-semibold text-orange-700 mb-6 tracking-widest uppercase">Bronze</h3>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-12">
-        {[1].map((i) => (
-          <TiltCard key={i}>
-            <a href="#" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+             <TiltCard>
+            <a href="https://artofproblemsolving.com/online" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
               <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
   <img
     src="/aops.png"
     alt="Art of Problem Solving"
-    className="w-full h-full object-contain"
+    className="w-full h-full object-contain brightness-0 invert"
   />
 </div>
               <p className="text-lg font-semibold">Art of Problem Solving</p>
             </a>
           </TiltCard>
-        ))}
       </div>
     </div>
 
