@@ -201,6 +201,16 @@ const Sponsors = () => {
         <p className="text-lg font-semibold">.xyz</p>
       </a>
     </TiltCard>
+
+    <TiltCard>
+      <a href="https://www.kariaa.com/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+        <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+          <img src="/kariaa.svg" alt="Kariaa" className="w-full h-full object-contain brightness-0 invert" />
+        </div>
+        <p className="text-lg font-semibold">Kariaa</p>
+      </a>
+    </TiltCard>
+
   </div>
 </div>
 
