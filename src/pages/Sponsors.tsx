@@ -175,7 +175,19 @@ const Sponsors = () => {
     className="w-full h-full object-contain brightness-0 invert"
   />
 </div>
-              <p className="text-lg font-semibold">Interview Cake</p>
+              <p className="text-lg font-semibold">ElevenLabs</p>
+            </a>
+          </TiltCard>
+          <TiltCard>
+            <a href="https://elevenlabs.io/" className="flex flex-col items-center gap-4 p-8 hover:scale-110 transition-transform">
+              <div className="w-36 h-36 flex items-center justify-center border border-gray-400/20 rounded-lg p-4">
+  <img
+    src="/elevenlabs.png"
+    alt="ElevenLabs"
+    className="w-full h-full object-contain brightness-0 invert"
+  />
+</div>
+              <p className="text-lg font-semibold">ElevenLabs</p>
             </a>
           </TiltCard>
       </div>
