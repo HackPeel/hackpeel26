@@ -175,7 +175,7 @@ const Sponsors = () => {
     className="w-full h-full object-contain brightness-0 invert"
   />
 </div>
-              <p className="text-lg font-semibold">ElevenLabs</p>
+              <p className="text-lg font-semibold">Interview Cake</p>
             </a>
           </TiltCard>
           <TiltCard>
